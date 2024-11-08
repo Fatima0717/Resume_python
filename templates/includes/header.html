@@ -1,0 +1,23 @@
+{% load static %}
+
+<!-- ヘッダーセクション -->
+<header class="site-header">
+    <div class="headerCol">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- モバイル用ロゴ -->
+          <div class="col-auto d-lg-none">
+            <div class="logoCol">
+              <a href="{% url 'home' %}">
+                <img src="{% static 'images/logo.png' %}" alt="Logo">
+              </a>
+            </div>
+          </div>
+          <!-- ナビゲーション -->
+          <div class="col">
+            {% include 'includes/nav.html' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>

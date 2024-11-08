@@ -1,0 +1,53 @@
+/* Large devices - デスクトップ */
+
+/* Medium devices - タブレット */
+
+/* Tablet specific - タブレット特有 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .education-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    :root {
+        --font-size-lg: 2rem;
+        --font-size-md: 1.25rem;
+    }
+
+    .section {
+        padding: var(--spacing-md) 0;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/* Small devices - モバイル */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .container {
+        max-width: 95%;
+    }
+}
+@media (max-width: 768px) {    
+    .profile-section {
+        padding: 70px 15px 40px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .navbar-collapse {
+        background: white;
+        padding: 15px;
+        border-radius: var(--border-radius);
+        margin-top: 10px;
+        box-shadow: var(--shadow-md);
+    }
+}

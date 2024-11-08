@@ -1,0 +1,63 @@
+/* ヘッダー基本スタイル */
+.site-header {
+    background: var(--bg-color);
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* スクロール方向に応じたヘッダーの動き */
+.scrollDown .site-header {
+    transform: translateY(-100%);
+}
+
+.scrollUp .site-header {
+    transform: translateY(0);
+}
+
+/* 固定ヘッダー */
+.fixedHeader .site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.fixedHeader .main-content {
+    padding-top: 80px; /* ヘッダーの高さ分を補正 */
+}
+
+/* レイアウト要素 */
+.headerCol {
+    padding: 1rem 0;
+}
+
+.logoCol {
+    padding: var(--spacing-sm) 0;
+}
+
+.logoCol img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logoCol img:hover {
+    transform: scale(1.05);
+}
+
+/* ナビゲーション */
+.navbar {
+    padding: 0;
+    background: transparent;
+}
+
+/* メディアクエリ */
+@media (min-width: 992px) {
+    .headerCol {
+        padding: 0;
+    }
+}

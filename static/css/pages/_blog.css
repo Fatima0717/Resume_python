@@ -1,0 +1,36 @@
+.blogDetailSection {
+    padding: var(--spacing-xl) 0;
+}
+
+.blogContent {
+    background: var(--bg-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.blog-title {
+    color: var(--text-color);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.blog-meta {
+    color: #666;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    margin: var(--spacing-md) 0;
+    border-radius: var(--border-radius);
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;  /* ブログ画像は16:9が一般的 */
+    object-fit: cover;
+}

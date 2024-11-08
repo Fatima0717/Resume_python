@@ -1,0 +1,59 @@
+{% load static %}
+
+<!-- プロフィールセクション -->
+<section class="profile-section">
+  <div class="container">
+    <div class="row">
+      <!-- プロフィール情報 -->
+      <div class="col-md-6">
+        <div class="profile-content">
+          <h1 class="section-title mb-4">自己紹介</h1>
+
+          <!-- 基本情報 -->
+          <div class="basic-info mb-4">
+            <h3 class="mb-3">基本情報</h3>
+            <ul class="info-list">
+              <li><strong>氏名：</strong>伊藤 琢矢</li>
+              <li><strong>生年月日：</strong>1994年7月17日</li>
+            </ul>
+          </div>
+
+          <!-- 学歴 -->
+          <div class="education-history">
+            <h3 class="mb-3">学歴</h3>
+            <div class="education-item">
+              <h4 class="text-primary">2019年11月 - 2021年1月</h4>
+              <h5>CHAPTERHOUSE</h5>
+              <p class="location">アイルランド</p>
+            </div>
+            <div class="education-item">
+              <h4 class="text-primary">2013年4月 - 2019年3月</h4>
+              <h5>愛知東邦大学</h5>
+              <p class="department">経済学科</p>
+            </div>
+            <div class="education-item">
+              <h4 class="text-primary">2013年3月</h4>
+              <h5>愛知東邦高等学校</h5>
+              <p class="status">卒業</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- プロフィール画像 -->
+      <div class="col-md-6">
+        <div class="profile-image">
+          <picture>
+            <source srcset="{% static 'images/profile.webp' %}" type="image/webp">
+            <img src="{% static 'images/profile.jpg' %}"
+                 alt="Profile Image"
+                 class="img-fluid rounded shadow"
+                 width="400"
+                 height="400"
+                 loading="eager">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

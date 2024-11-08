@@ -1,0 +1,19 @@
+<article class="blog-detail">
+    <header class="blog-header">
+      <h1 class="blog-title">{{ blog.title }}</h1>
+      <div class="blog-meta">
+        <span class="blog-date">
+          <i class="far fa-calendar-alt"></i>
+          {{ blog.created_at|date:"Y年m月d日" }}
+        </span>
+        <span class="blog-author">
+          <i class="far fa-user"></i>
+          {{ blog.author }}
+        </span>
+      </div>
+    </header>
+    
+    <div class="blog-content">
+      {{ blog.content|safe|linebreaks }}
+    </div>
+  </article>

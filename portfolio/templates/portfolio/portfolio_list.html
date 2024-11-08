@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="portfolio-title">ポートフォリオ</h1>
+    <div class="row g-4">
+        {% for project in projects %}
+        <div class="col-md-4 mb-4">
+            <article class="card portfolio-card">
+                {% if project.image %}
+                <img src="{{ project.image.url }}" class="card-img-top portfolio-image" alt="{{ project.title }}" width="400"
+                height="300"
+                loading="lazy">
+                {% endif %}
+                <div class="card-body">
+                    <h2 class="card-title portfolio-card-title">{{ project.title }}</h2>
+                    <p class="card-text portfolio-card-text">{{ project.description|truncatewords:30|linebreaks }}</p>
+                    <div class="portfolio-links">
+                        <a href="{% url 'portfolio:detail' project.pk %}" class="btn btn-secondary">
+                            詳細を見る
+                        </a>
+                        {% if project.url %}
+                        <a href="{{ project.url }}" class="btn btn-primary" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt me-2"></i>プロジェクトを見る
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <p class="no-projects">まだプロジェクトがありません。</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- 既存のスタイルに追加 -->
+<style>
+.btn-secondary {
+    background-color: #95a5a6;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+    transform: translateY(-2px);
+}
+</style>
+{% endblock %}

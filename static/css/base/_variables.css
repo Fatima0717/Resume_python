@@ -1,0 +1,34 @@
+:root {
+    /* カラー */
+    --primary-color: #00ffff;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --bg-color: #fff;
+    --accent-color: #2980b9;
+
+    /* タイポグラフィ */
+    --font-primary: 'Helvetica Neue', Arial, sans-serif;
+    --font-size-base: 16px;
+    --font-size-lg: 2.5rem;
+    --font-size-md: 1.5rem;
+    --font-size-sm: 0.9rem;
+
+    /* スペーシング */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* ボーダー*/
+    --border-radius: 8px;
+    --border-radius-lg: 15px;
+
+    /* シャドウ*/
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 20px rgba(0,0,0,0.1);
+
+    /* トランジション */
+    --transition-base: all 0.3s ease;
+  }

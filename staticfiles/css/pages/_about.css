@@ -1,0 +1,31 @@
+.career-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.career-item {
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--secondary-color);
+    background-color: #f8f9fa;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    margin-bottom: var(--spacing-md);
+}
+
+.career-item h3 {
+    color: var(--secondary-color);
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.technical-skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.technical-skills li {
+    display: inline-block;
+    margin-right: var(--spacing-sm);
+    background-color: #e9ecef;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 15px;
+    margin-bottom: var(--spacing-xs);
+}

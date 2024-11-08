@@ -1,0 +1,108 @@
+/* Large devices - デスクトップ */
+@media (max-width: 1200px) {
+    .portfolio-title {
+        font-size: 2rem;
+    }
+}
+
+/* Medium devices - タブレット */
+@media (max-width: 992px) {
+    .portfolioRow {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+/* Tablet specific - タブレット特有 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .education-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .education-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .education-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .education-year,
+    .education-school {
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    :root {
+        --font-size-lg: 2rem;
+        --font-size-md: 1.25rem;
+    }
+
+    .portfolio-card {
+        display: inline-block;
+        width: 100%;
+        max-width: 400px;
+        margin: 15px auto;
+    }
+
+    .section {
+        padding: var(--spacing-md) 0;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .portfolio-image {
+        max-height: 250px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+/* Small devices - モバイル */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .container {
+        max-width: 95%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {    
+    .profile-section {
+        padding: 70px 15px 40px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .navbar-collapse {
+        background: white;
+        padding: 15px;
+        border-radius: var(--border-radius);
+        margin-top: 10px;
+        box-shadow: var(--shadow-md);
+    }
+}

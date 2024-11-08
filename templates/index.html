@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Did Coding - ホーム{% endblock %}
+
+{% block content %}
+  <section class="bannerSection">
+    <div class="container">
+      <!-- プロフィール部分 -->
+      {% include 'includes/profile_section.html' %}
+      <!-- スキル部分 -->
+      {% include 'includes/skills_section.html' %}
+    </div>
+  </section>
+{% endblock %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.5/swiper-bundle.min.css">
+{% endblock %}
+
+{% block scripts %}
+  {{ block.super }}
+  <script src="https://unpkg.com/swiper@7.0.5/swiper-bundle.min.js"></script>
+{% endblock %}
