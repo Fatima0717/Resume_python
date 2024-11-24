@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Resume_python
 =======
 # DID Coding Portfolio
@@ -30,4 +29,4 @@ Djangoを使用した個人ポートフォリオサイト
 - データベース最適化
 
 ## インストール方法
->>>>>>> origin/master
+
