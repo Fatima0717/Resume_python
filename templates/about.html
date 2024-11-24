@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h1 class="mb-4">プロフィール</h1>
+
+    <!-- 職務経歴セクション -->
+    <section class="career-section mb-5">
+      <h2 class="mb-4">職務経歴</h2>
+
+      <!-- 薬の窓口 -->
+      <div class="career-item mb-4">
+        <h3>株式会社薬の窓口（令和3年）</h3>
+        <div class="position mb-2">
+          <strong>職種:</strong> システムエンジニア（SE）
+        </div>
+        <div class="responsibilities">
+          <strong>業務内容:</strong>
+          <ul>
+            <li>Web制作</li>
+            <li>掲示板作成</li>
+            <li>デバッグ作業</li>
+          </ul>
+          <strong>使用技術:</strong> PHP
+        </div>
+      </div>
+
+      <!-- 英会話教室 -->
+      <div class="career-item mb-4">
+        <h3>英会話オンライン教室「lavida」（令和4年）</h3>
+        <div class="responsibilities">
+          <strong>業務内容:</strong>
+          <ul>
+            <li>Webページ制作</li>
+            <li>CanvaとIllustratorを使用したPRパンフレットのデザイン作成</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- デジタルCVポートフォリオ -->
+      <div class="career-item mb-4">
+        <h3>デジタルCVポートフォリオ作成プロジェクト（令和6年7月～）</h3>
+        <div class="technical-skills">
+          <strong>技術スタック:</strong>
+          <ul>
+            <li>Webスクレイピング</li>
+            <li>機械学習</li>
+            <li>使用言語: Python、JavaScript</li>
+            <li>フレームワーク: Django</li>
+            <li>モジュール: Swiper</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .career-item {
+      padding: 20px;
+      border-left: 4px solid #007bff;
+      background-color: #f8f9fa;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .career-item h3 {
+      color: #007bff;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .career-item ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .technical-skills ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .technical-skills li {
+      display: inline-block;
+      margin-right: 15px;
+      background-color: #e9ecef;
+      padding: 5px 10px;
+      border-radius: 15px;
+      margin-bottom: 5px;
+    }
+  </style>
+{% endblock %}

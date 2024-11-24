@@ -1,0 +1,30 @@
+.portfolio-card {
+    border: none;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+    height: 100%;
+    overflow: hidden;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-card-title {
+    color: var(--secondary-color);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.portfolio-card-text {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}

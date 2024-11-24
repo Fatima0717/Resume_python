@@ -1,0 +1,30 @@
+.headerCol {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.logoCol {
+    padding: var(--spacing-sm) 0;
+}
+
+.logoCol img {
+    height: 30px;
+    transition: var(--transition-base);
+}
+
+.logoCol img:hover {
+    transform: scale(1.05);
+}
+
+.fixedHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-sm);
+}

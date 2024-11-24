@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <article class="project-detail">
+        <h1 class="project-title">{{ project.title }}</h1>
+        
+        {% if project.image %}
+        <div class="project-image">
+            <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid" width="800"
+            height="600"
+            loading="lazy">
+        </div>
+        {% endif %}
+        
+        <div class="project-content">
+            <div class="project-description">
+                {{ project.description|linebreaks }}
+            </div>
+            
+            {% if project.url %}
+            <div class="project-links">
+                <a href="{{ project.url }}" class="btn btn-primary" target="_blank" rel="noopener">
+                    <i class="fas fa-external-link-alt me-2"></i>プロジェクトを見る
+                </a>
+            </div>
+            {% endif %}
+            
+            <div class="project-meta">
+                <p>作成日: {{ project.created_at|date:"Y年m月d日" }}</p>
+            </div>
+        </div>
+    </article>
+</div>
+
+<style>
+.project-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-title {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-image {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-content {
+    color: #34495e;
+    line-height: 1.8;
+}
+
+.project-description {
+    margin-bottom: 30px;
+}
+
+.project-links {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-meta {
+    color: #7f8c8d;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+</style>
+{% endblock %}

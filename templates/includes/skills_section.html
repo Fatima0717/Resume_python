@@ -1,0 +1,111 @@
+{% load static %}
+
+<!-- スキルセクション -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Technical Skills</h2>
+    <div class="row g-4">
+      <!-- フロントエンドスキル -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>フロントエンド</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- バックエンドスキル -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>バックエンド</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 開発ツール -->
+      <div class="col-md-4">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>ツール</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .skills-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2b5a88;
+    margin-bottom: 3rem;
+  }
+
+  .skill-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+
+  .skill-card h3 {
+    color: #22578d;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .skill-tag {
+    background: #e9f5ff;
+    color: #3498db;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+</style>

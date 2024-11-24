@@ -1,0 +1,83 @@
+/* Base */
+@import 'optimized/_reset.css';
+@import 'optimized/_variables.css';
+@import 'optimized/_typography.css';
+@import 'optimized/_animations.css';
+
+/* Layouts */
+@import 'optimized/_header.css';
+@import 'optimized/_footer.css';
+@import 'optimized/_navigation.css';
+@import 'optimized/_grid.css';
+
+/* Components */
+@import 'optimized/_buttons.css';
+@import 'optimized/_cards.css';
+@import 'optimized/_forms.css';
+@import 'optimized/_badges.css';
+
+/* Pages */
+@import 'optimized/_home.css';
+@import 'optimized/_about.css';
+@import 'optimized/_portfolio.css';
+@import 'optimized/_blog.css';
+
+/* Utils */
+@import 'optimized/_helpers.css';
+@import 'optimized/_mixins.css';
+@import 'optimized/_media.css';
+
+/* 以下は変更なし */
+/* Utils Helpers */
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: var(--spacing-xl);
+}
+
+.mb-4 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-5 {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

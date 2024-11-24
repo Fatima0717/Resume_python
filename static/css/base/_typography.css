@@ -1,0 +1,33 @@
+/* 見出し */
+h1, .h1 {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+}
+
+h2, .h2 {
+    font-size: calc(var(--font-size-lg) * 0.8);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+h3, .h3 {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* パラグラフ */
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* テスク色 */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
