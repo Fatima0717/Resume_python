@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
 def homepage(request):
-    """メインページを表示"""
     return render(request, 'index.html')
 
-def about(request):
-    """アバウトページを表示"""
-    return render(request, 'about.html')
+def portfolio(request):
+    return render(request, 'portfolio.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def contact(request):
+    return render(request, 'blog.html')
